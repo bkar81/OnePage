@@ -1,6 +1,6 @@
 //One Page Wisdom
 const CACHE_PREFIX = "onepage-wisdom-cache-";
-const CACHE_NAME = CACHE_PREFIX + "v1.0.1";
+const CACHE_NAME = CACHE_PREFIX + "v1.0.2";
 const ASSETS = ["./", "./index.html", "./manifest.json", "./pwa-192x192.png", "./pwa-512x512.png", "./pwa-maskable-512x512.png"];
 self.addEventListener("install", event => {
   event.waitUntil(caches.open(CACHE_NAME).then(cache => cache.addAll(ASSETS)).then(() => self.skipWaiting()));
